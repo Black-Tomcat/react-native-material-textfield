@@ -70,7 +70,7 @@ export default class TextField extends PureComponent {
 
     animationDuration: PropTypes.number,
     
-    name: PropTypes.string
+    name: PropTypes.string,
 
     fontSize: PropTypes.number,
     labelFontSize: PropTypes.number,
