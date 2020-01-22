@@ -69,6 +69,8 @@ export default class TextField extends PureComponent {
     ...TextInput.propTypes,
 
     animationDuration: PropTypes.number,
+    
+    name: PropTypes.string
 
     fontSize: PropTypes.number,
     labelFontSize: PropTypes.number,
@@ -609,6 +611,7 @@ export default class TextField extends PureComponent {
       editable,
       tintColor,
       style: inputStyleOverrides,
+      name,
     } = this.props;
 
     let props = this.inputProps();
@@ -629,6 +632,7 @@ export default class TextField extends PureComponent {
         onBlur={this.onBlur}
         value={this.value()}
         ref={this.inputRef}
+        name={name}
       />
     );
   }
